@@ -11,12 +11,23 @@ package pkg.humano;
  */
 public class Persona {
 
-    private String nombre;
+    private String nombre, pie;
     private int edad;
 
-    public Persona(String nombre, int edad) {
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    private String sexo;
+
+    public Persona(String nombre, int edad, String sexo,String pie ) {
         this.nombre = nombre;
         this.edad = edad;
+        this.sexo = sexo;
+        this.sexo = pie;
     }
 
     public String getNombre() {
